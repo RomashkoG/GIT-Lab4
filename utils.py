@@ -11,3 +11,10 @@ def is_prime(num):
         if num % i == 0:
             return False
     return True
+
+def is_power_of_five(num):
+    if num < 1:
+        return False
+    while num % 5 == 0:
+        num /= 5
+    return num == 1
